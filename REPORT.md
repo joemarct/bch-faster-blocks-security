@@ -8,7 +8,7 @@ This report is **descriptive, not prescriptive**. It reports what the
 models and simulations say under stated assumptions. It does **not**
 recommend for or against CHIP activation.
 
-- Plan: `bch_faster_blocks_revised_experimental_plan.md`
+- Plan: `PLAN.md`
 - Claim matrix: `CLAIMS.md` · Hypotheses: `HYPOTHESES.md`
 - Machine-readable results: `results/tables/master_results.csv` (659 rows)
 - Summary table: `results/tables/master_summary.csv`
