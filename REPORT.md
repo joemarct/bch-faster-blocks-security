@@ -592,8 +592,9 @@ this model.
 .venv/bin/python -m pytest -q                                # test suite
 ```
 
-**Git commit:** recorded on the commit that adds this report
-(`git rev-parse --short HEAD`).
+**Git commit:** `git rev-parse --short HEAD` at run time identifies the exact
+revision. This report is part of the initial repository commit
+(`Reproduce and stress-test CHIP-2025-03 faster-blocks security claims`).
 
 **Output paths**
 
