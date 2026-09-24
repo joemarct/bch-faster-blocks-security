@@ -1,0 +1,87 @@
+# Central configuration for all experiments.
+# Every experiment reads its parameters from here (or an override file)
+# so that a run is fully described by (config, seed, code_version).
+
+# --- Target intervals (seconds) -----------------------------------------
+intervals:
+  baseline_sec: 600      # current BCH target block interval
+  fast_sec: 60           # CHIP-2025-03 proposed target block interval
+
+# --- Attacker fractions -------------------------------------------------
+# Baseline sweep (section 8 of the plan). Denser sampling is added in
+# regions where results change rapidly (near 0.33 and near 0.5).
+attacker_shares:
+  sweep: [0.01, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.49]
+  coarse: [0.05, 0.10, 0.20, 0.30, 0.40]      # P1 validation cells
+  primary: 0.10                               # MVP table (section 39)
+
+# --- Confirmation depths (merchant-facing z; z=1 means included in tip)-
+confirmations:
+  default: [1, 2, 3, 5, 10]
+  policies:                                   # section 11 / 39
+    - {interval_sec: 600, confirmations: 1}
+    - {interval_sec: 60,  confirmations: 1}
+    - {interval_sec: 60,  confirmations: 2}
+    - {interval_sec: 60,  confirmations: 3}
+    - {interval_sec: 60,  confirmations: 5}
+    - {interval_sec: 60,  confirmations: 10}
+
+# --- Tie handling -------------------------------------------------------
+# "strict" (A): attacker needs strictly greater chainwork.
+# "tie_win" (B): equal cumulative chainwork counts as success.
+tie_policies: [strict, tie_win]
+
+# --- Monte Carlo --------------------------------------------------------
+monte_carlo:
+  dev_trials: 100000
+  final_trials: 1000000
+  num_points: 160
+
+# --- Stone DP / Fablous reproduction -----------------------------------
+stone:
+  bch:
+    finalization_depth: 10
+    ticks_per_block: 600
+  fast:
+    finalization_depth: 100
+    ticks_per_block: 60
+  embargo_configs: [[1, 1], [1, 10], [10, 100]]
+
+# --- Tick-scaled parking schedule (Section 4 / Stone) -------------------
+parking:
+  lock_in_ticks: 2400          # ~40 minutes, unchanged by faster blocks
+  finalization_aging_sec: 7200 # 120 minutes, aging gate
+  finalization_depth_floor: 10 # block-equivalents (10 blocks / 100 fast)
+
+# --- Hashpower / work normalization ------------------------------------
+work:
+  baseline_block_work: 1.0     # W_600 = 1.0
+  fast_block_work: 0.1         # W_60 = 0.1 (same total hashrate)
+
+# --- External hash scenarios (sections 23-24, 26) ----------------------
+external_hash:
+  acquisition_delays_sec: [0, 30, 60, 120, 300, 600, 1800, 3600]
+  shares: [0.30, 0.40, 0.49, 0.51, 0.60, 0.75, 0.90]
+  durations_sec: [60, 120, 300, 600, 1800, 3600, 7200]
+  q0: [0.01, 0.05, 0.10]
+
+# --- Finite attack deadlines (section 19) ------------------------------
+deadlines_sec: [60, 120, 300, 600, 1800, 3600, 21600, 86400]
+
+# --- Economics (sections 14, 25) ---------------------------------------
+economics:
+  reward_multiple_targets: [0.1, 0.5, 1, 2, 5, 10, 20, 36, 50, 100, 500, 1000]
+  primary_target_multiple: 36   # 10% attacker, 1-conf break-even claim
+
+# --- Reproducibility ---------------------------------------------------
+seed:
+  master: 20250924
+  trials: 1
+
+# --- Output -------------------------------------------------------------
+output:
+  raw_dir: results/raw
+  tables_dir: results/tables
+  figures_dir: results/figures
+  master_results: results/tables/master_results.csv
+  float_format: "%.8g"

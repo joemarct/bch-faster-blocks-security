@@ -1,0 +1,22 @@
+[project]
+name = "bch-faster-blocks-security"
+version = "0.1.0"
+description = "Independent reproduction and robustness testing of faster-block confirmation-security claims (CHIP-2025-03)."
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.setuptools]
+packages = ["src"]

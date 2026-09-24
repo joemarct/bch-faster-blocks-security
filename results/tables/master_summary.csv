@@ -1,0 +1,660 @@
+experiment,phase,model,target_interval_sec,attacker_share,confirmations,acceptance_policy,success_probability,ci_lower,ci_upper,expected_wait_sec,median_wait_sec,expected_work
+P0_analytical_baseline,I,analytical_exact,,0.01,1,600s × 1,0.0003010101010100901,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.01,1,600s × 1,0.000252682928648551,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.01,1,600s × 1,0.02000000000000001,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.01,1,600s × 1,0.020049659504318806,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.01,2,600s × 2,9.950101010176317e-06,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.01,2,600s × 2,6.4034869833307084e-06,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.01,2,600s × 2,0.0005960000000000207,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.01,2,600s × 2,0.0005013028220883786,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.01,3,600s × 3,3.4512100999084063e-07,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.01,3,600s × 3,1.6558652515819006e-07,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.01,3,600s × 3,1.9701199999916557e-05,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.01,3,600s × 3,1.3032317209504818e-05,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.01,5,600s × 5,4.4701366317646615e-10,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.01,5,600s × 5,1.1439083014153084e-10,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.01,5,600s × 5,2.4370737284057203e-08,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.01,5,600s × 5,9.161424951997788e-09,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.01,10,600s × 10,1.703394491456759e-17,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.01,10,600s × 10,0.0,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.01,10,600s × 10,1.6280665905281624e-15,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.01,10,600s × 10,1.1102230246251565e-16,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.05,1,600s × 1,0.007631578947368479,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.05,1,600s × 1,0.006593508459243003,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.05,1,600s × 1,0.10000000000000005,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.05,1,600s × 1,0.10120365051074376,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.05,2,600s × 2,0.00121907894736841,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.05,2,600s × 2,0.0008358089685520653,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.05,2,600s × 2,0.01449999999999998,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.05,2,600s × 2,0.012646260399183706,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.05,3,600s × 3,0.00020376644736864715,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.05,3,600s × 3,0.00010801577778452032,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.05,3,600s × 3,0.0023162500000002326,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.05,3,600s × 3,0.001641321091248149,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.05,5,600s × 5,6.106679009417566e-06,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.05,5,600s × 5,1.8618671183689983e-06,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.05,5,600s × 5,6.644441406286355e-05,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.05,5,600s × 5,2.8745518771300382e-05,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.05,10,600s × 10,1.1348396857711494e-09,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.05,10,600s × 10,7.84150522292748e-11,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.05,10,600s × 10,1.1878677858219526e-08,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.05,10,600s × 10,1.2507451740972897e-09,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.1,1,600s × 1,0.031111111111111124,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.1,1,600s × 1,0.02782889037451186,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.1,1,600s × 1,0.19999999999999998,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.1,1,600s × 1,0.20458727394278242,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.1,2,600s × 2,0.00951111111111104,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.1,2,600s × 2,0.007041684174493135,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.1,2,600s × 2,0.055999999999999925,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.1,2,600s × 2,0.05097789283933862,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.1,3,600s × 3,0.003031111111110994,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.1,3,600s × 3,0.0018143303392115229,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.1,3,600s × 3,0.017119999999999906,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.1,3,600s × 3,0.013172241678896524,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.1,5,600s × 5,0.0003285623111111653,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.1,5,600s × 5,0.00012412134919070894,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.1,5,600s × 5,0.0017818400000000187,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.1,5,600s × 5,0.0009136821879279777,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.1,10,600s × 10,1.5034055229799991e-06,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.1,10,600s × 10,1.6365735844292573e-07,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.1,10,600s × 10,7.859764652798608e-06,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.1,10,600s × 10,1.2414021748341497e-06,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.15,1,600s × 1,0.07147058823529419,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.15,1,600s × 1,0.06606247321728032,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.15,1,600s × 1,0.30000000000000004,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.15,1,600s × 1,0.3096983497692942,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.15,2,600s × 2,0.03130808823529417,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.15,2,600s × 2,0.024943397615244667,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.15,2,600s × 2,0.1215000000000001,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.15,2,600s × 2,0.1150410302791336,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.15,3,600s × 3,0.014239025735294305,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.15,3,600s × 3,0.009576559056836298,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.15,3,600s × 3,0.05322375000000017,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.15,3,600s × 3,0.04422780528370407,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.15,5,600s × 5,0.003125721859122434,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.15,5,600s × 5,0.0014520880064697872,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.15,5,600s × 5,0.0112573262109377,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.15,5,600s × 5,0.006783781183198112,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.15,10,600s × 10,8.246486402270747e-05,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.15,10,600s × 10,1.3960792130673916e-05,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.15,10,600s × 10,0.00028701473783073383,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.15,10,600s × 10,6.700566400430485e-05,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.2,1,600s × 1,0.12999999999999995,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.2,1,600s × 1,0.12384911904466955,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.2,1,600s × 1,0.39999999999999997,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.2,1,600s × 1,0.41589941269644637,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.2,2,600s × 2,0.0724,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.2,2,600s × 2,0.061772885757020224,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.2,2,600s × 2,0.208,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.2,2,600s × 2,0.20392850912716864,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.2,3,600s × 3,0.04167999999999987,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.2,3,600s × 3,0.031279530511590825,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.2,3,600s × 3,0.11583999999999987,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.2,3,600s × 3,0.10324162253072999,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.2,5,600s × 5,0.014567756799999517,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.2,5,600s × 5,0.008232449101215789,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.2,5,600s × 5,0.03916287999999953,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.2,5,600s × 5,0.02741554005309732,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.2,10,600s × 10,0.0012121205478262836,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.2,10,600s × 10,0.0003129583819645454,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.2,10,600s × 10,0.003158241098331755,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.2,10,600s × 10,0.001066952797483256,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.25,1,600s × 1,0.20833333333333331,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.25,1,600s × 1,0.20385409936245635,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.25,1,600s × 1,0.5,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.25,1,600s × 1,0.5223124596174737,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.25,2,600s × 2,0.13802083333333334,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.25,2,600s × 2,0.12528935275928765,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.25,2,600s × 2,0.3125,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.25,2,600s × 2,0.31544384128987724,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.25,3,600s × 3,0.09407552083333322,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.25,3,600s × 3,0.07803053632342227,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.25,3,600s × 3,0.2070312499999999,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.25,3,600s × 3,0.19611529521795923,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.25,5,600s × 5,0.045770009358723635,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.25,5,600s × 5,0.03098697634286529,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.25,5,600s × 5,0.09785461425781222,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.25,5,600s × 5,0.07835701207967494,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.25,10,600s × 10,0.008563613978668089,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.25,10,600s × 10,0.003277714314719904,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.25,10,600s × 10,0.017806558607842207,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.25,10,600s × 10,0.008450100042087683,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.3,1,600s × 1,0.30857142857142866,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.3,1,600s × 1,0.30867691853847157,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.3,1,600s × 1,0.6000000000000001,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.3,1,600s × 1,0.627749109982254,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.3,2,600s × 2,0.23297142857142886,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.3,2,600s × 2,0.2230141484398701,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.3,2,600s × 2,0.43200000000000016,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.3,2,600s × 2,0.44571709952398375,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.3,3,600s × 3,0.18005142857142897,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.3,3,600s × 3,0.1629264269067332,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.3,3,600s × 3,0.3261600000000003,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.3,3,600s × 3,0.32458410182048103,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.3,5,600s × 5,0.11174970137142892,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.3,5,600s × 5,0.08874442568714558,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.3,5,600s × 5,0.19761732000000035,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.3,5,600s × 5,0.1773523113609451,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.3,10,600s × 10,0.03769991528754782,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.3,10,600s × 10,0.02054626120387293,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.3,10,600s × 10,0.0651067137626013,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.3,10,600s × 10,0.04166047996897937,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.35,1,600s × 1,0.4334615384615384,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.35,1,600s × 1,0.44052918663160356,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.35,1,600s × 1,0.7,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.35,1,600s × 1,0.7306251639337351,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.35,2,600s × 2,0.3617990384615384,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.35,2,600s × 2,0.3608891643072497,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.35,2,600s × 2,0.5634999999999999,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.35,2,600s × 2,0.588810786934213,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.35,3,600s × 3,0.3074549759615386,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.35,3,600s × 3,0.29822301608385726,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.35,3,600s × 3,0.4703387500000001,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.35,3,600s × 3,0.4844586102681797,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.35,5,600s × 5,0.22874419064786639,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.35,5,600s × 5,0.20701897156923144,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.35,5,600s × 5,0.34343857105468734,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.35,5,600s × 5,0.33636477529888165,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.35,10,600s × 10,0.11874077625846857,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.35,10,600s × 10,0.08710102050000967,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.35,10,600s × 10,0.174947200740346,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.35,10,600s × 10,0.14280535760069601,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.4,1,600s × 1,0.5866666666666667,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.4,1,600s × 1,0.6006755740857618,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.4,1,600s × 1,0.8,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.4,1,600s × 1,0.8288609603224694,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.4,2,600s × 2,0.5290666666666668,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.4,2,600s × 2,0.5411457225392906,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.4,2,600s × 2,0.7040000000000002,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.4,2,600s × 2,0.7364028618842733,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.4,3,600s × 3,0.48298666666666673,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.4,3,600s × 3,0.4904041804053475,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.4,3,600s × 3,0.6348800000000001,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.4,3,600s × 3,0.6641680008572945,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.4,5,600s × 5,0.41083644586666657,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.4,5,600s × 5,0.40747242417057916,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.4,5,600s × 5,0.53313536,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.4,5,600s × 5,0.5506251290702074,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.4,10,600s × 10,0.2906297772696198,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.4,10,600s × 10,0.26550226114450504,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.4,10,600s × 10,0.3721840428308222,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.4,10,600s × 10,0.3599763240066036,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.45,1,600s × 1,0.7731818181818181,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.45,1,600s × 1,0.7884998038836439,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.45,1,600s × 1,0.8999999999999999,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.45,1,600s × 1,0.9197757876800029,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.45,2,600s × 2,0.739769318181818,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.45,2,600s × 2,0.759237924933384,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.45,2,600s × 2,0.8504999999999998,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.45,2,600s × 2,0.8777174393950844,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.45,3,600s × 3,0.7122040056818182,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.45,3,600s × 3,0.7331873473534987,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.45,3,600s × 3,0.8137462499999999,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.45,3,600s × 3,0.8443949783213225,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.45,5,600s × 5,0.6670498530384587,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.45,5,600s × 5,0.6878674205945214,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.45,5,600s × 5,0.7571581091015623,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.45,5,600s × 5,0.789785814061307,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.45,10,600s × 10,0.5836302087334432,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.45,10,600s × 10,0.5976309781307891,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.45,10,600s × 10,0.6579281751567838,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.45,10,600s × 10,0.6854240103232614,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.49,1,600s × 1,0.9509843137254901,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.49,1,600s × 1,0.9561658503349567,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.49,1,600s × 1,0.98,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.49,1,600s × 1,0.9849963648797503,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.49,2,600s × 2,0.9436372537254901,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.49,2,600s × 2,0.9512197480004156,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.49,2,600s × 2,0.9700039999999999,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.49,2,600s × 2,0.9777142023846626,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.49,3,600s × 3,0.9375171527454901,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.49,3,600s × 3,0.946809771873557,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.49,3,600s × 3,0.9625099988,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.49,3,600s × 3,0.9721313580183153,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.49,5,600s × 5,0.9273484817940677,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.49,5,600s × 5,0.9391522545570484,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.49,5,600s × 5,0.9508074905517997,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.49,5,600s × 5,0.9632123913400411,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.49,10,600s × 10,0.9079370608092853,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.49,10,600s × 10,0.9237949159702747,,,,,
+P0_analytical_baseline,I,analytical_exact,,0.49,10,600s × 10,0.9296056726466805,,,,,
+P0_analytical_baseline,I,analytical_poisson,,0.49,10,600s × 10,0.9464793832760894,,,,,
+P1_validate_simulators,I,event_bernoulli,600.0,0.05,1,600s × 1,0.00779,0.007414037484784159,0.008184870196511786,600.0,415.8883083359673,1.0
+P1_validate_simulators,I,distribution,600.0,0.05,1,600s × 1,0.00748,0.007111726220704986,0.007867193368884575,600.0,415.8883083359673,1.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.05,1,600s × 1,0.10086,0.09954786240394928,0.10218747010029172,600.0,415.8883083359673,1.0
+P1_validate_simulators,I,distribution,600.0,0.05,1,600s × 1,0.099445,0.09814114904828282,0.10076423781155648,600.0,415.8883083359673,1.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.05,2,600s × 2,0.001215,0.00107161006642804,0.001377550185934157,1200.0,1007.0081940099967,2.0
+P1_validate_simulators,I,distribution,600.0,0.05,2,600s × 2,0.00122,0.0010762971605150172,0.0013828628997779278,1200.0,1007.0081940099967,2.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.05,2,600s × 2,0.014795,0.014275122674148885,0.015333515918125144,1200.0,1007.0081940099967,2.0
+P1_validate_simulators,I,distribution,600.0,0.05,2,600s × 2,0.014415,0.013901867254466387,0.014946785935070785,1200.0,1007.0081940099967,2.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.05,3,600s × 3,0.00015,0.00010507739576390072,0.0002141237673489518,1800.0,1604.436188234137,3.0
+P1_validate_simulators,I,distribution,600.0,0.05,3,600s × 3,0.000205,0.00015112698484037935,0.0002780720655107022,1800.0,1604.436188234137,3.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.05,3,600s × 3,0.00245,0.0022426854715764943,0.002676427339680483,1800.0,1604.436188234137,3.0
+P1_validate_simulators,I,distribution,600.0,0.05,3,600s × 3,0.002295,0.002094630557252694,0.0025144882081510923,1800.0,1604.436188234137,3.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.05,5,600s × 5,0.0,0.0,1.920692519040967e-05,3000.0,2802.5453296775913,5.0
+P1_validate_simulators,I,distribution,600.0,0.05,5,600s × 5,2e-05,7.777636035442469e-06,5.142852087795959e-05,3000.0,2802.5453296775913,5.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.05,5,600s × 5,7.5e-05,4.5453456606938166e-05,0.00012375058754469294,3000.0,2802.5453296775913,5.0
+P1_validate_simulators,I,distribution,600.0,0.05,5,600s × 5,7.5e-05,4.5453456606938166e-05,0.00012375058754469294,3000.0,2802.5453296775913,5.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.05,10,600s × 10,0.0,0.0,1.920692519040967e-05,6000.0,5801.228768828478,10.0
+P1_validate_simulators,I,distribution,600.0,0.05,10,600s × 10,0.0,0.0,1.920692519040967e-05,6000.0,5801.228768828478,10.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.05,10,600s × 10,0.0,0.0,1.920692519040967e-05,6000.0,5801.228768828478,10.0
+P1_validate_simulators,I,distribution,600.0,0.05,10,600s × 10,0.0,0.0,1.920692519040967e-05,6000.0,5801.228768828478,10.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.1,1,600s × 1,0.03113,0.030377835600474423,0.031900175501553635,600.0,415.8883083359673,1.0
+P1_validate_simulators,I,distribution,600.0,0.1,1,600s × 1,0.030925,0.030175269294790013,0.03169274968207737,600.0,415.8883083359673,1.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.1,1,600s × 1,0.20023,0.19848196442222402,0.20198955089770468,600.0,415.8883083359673,1.0
+P1_validate_simulators,I,distribution,600.0,0.1,1,600s × 1,0.199835,0.1980882700940581,0.2015932603993415,600.0,415.8883083359673,1.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.1,2,600s × 2,0.009545,0.009128193720800697,0.00998064654418783,1200.0,1007.0081940099967,2.0
+P1_validate_simulators,I,distribution,600.0,0.1,2,600s × 2,0.009565,0.009147751558300478,0.010001087938411042,1200.0,1007.0081940099967,2.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.1,2,600s × 2,0.05622,0.055218979751675286,0.05723806754684672,1200.0,1007.0081940099967,2.0
+P1_validate_simulators,I,distribution,600.0,0.1,2,600s × 2,0.055665,0.05466869009426574,0.056678378523943224,1200.0,1007.0081940099967,2.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.1,3,600s × 3,0.003015,0.0027840764251913517,0.0032650146822401603,1800.0,1604.436188234137,3.0
+P1_validate_simulators,I,distribution,600.0,0.1,3,600s × 3,0.00305,0.0028176904745019354,0.0033013992884448136,1800.0,1604.436188234137,3.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.1,3,600s × 3,0.01699,0.016432825505012863,0.017565728768859583,1800.0,1604.436188234137,3.0
+P1_validate_simulators,I,distribution,600.0,0.1,3,600s × 3,0.017915,0.017342870179550603,0.018505648561510237,1800.0,1604.436188234137,3.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.1,5,600s × 5,0.00031,0.00024185168417510623,0.00039734333272168547,3000.0,2802.5453296775913,5.0
+P1_validate_simulators,I,distribution,600.0,0.1,5,600s × 5,0.00026,0.00019829185784892594,0.0003409050797403848,3000.0,2802.5453296775913,5.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.1,5,600s × 5,0.00199,0.0018040218604190856,0.0021951086212090667,3000.0,2802.5453296775913,5.0
+P1_validate_simulators,I,distribution,600.0,0.1,5,600s × 5,0.001995,0.0018087773420258357,0.0022003529475330646,3000.0,2802.5453296775913,5.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.1,10,600s × 10,5e-06,8.826233199317767e-07,2.832410980122599e-05,6000.0,5801.228768828478,10.0
+P1_validate_simulators,I,distribution,600.0,0.1,10,600s × 10,0.0,0.0,1.920692519040967e-05,6000.0,5801.228768828478,10.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.1,10,600s × 10,0.0,0.0,1.920692519040967e-05,6000.0,5801.228768828478,10.0
+P1_validate_simulators,I,distribution,600.0,0.1,10,600s × 10,5e-06,8.826233199317767e-07,2.832410980122599e-05,6000.0,5801.228768828478,10.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.2,1,600s × 1,0.129615,0.12815008170615583,0.1310941462078175,600.0,415.8883083359673,1.0
+P1_validate_simulators,I,distribution,600.0,0.2,1,600s × 1,0.129975,0.12850833690812122,0.131455877176866,600.0,415.8883083359673,1.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.2,1,600s × 1,0.401395,0.39924864182158193,0.4035451459761349,600.0,415.8883083359673,1.0
+P1_validate_simulators,I,distribution,600.0,0.2,1,600s × 1,0.40076,0.3986142156991312,0.40290959649138064,600.0,415.8883083359673,1.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.2,2,600s × 2,0.071425,0.07030454313277482,0.07256192008315214,1200.0,1007.0081940099967,2.0
+P1_validate_simulators,I,distribution,600.0,0.2,2,600s × 2,0.07173,0.07060731590740223,0.07286913559230036,1200.0,1007.0081940099967,2.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.2,2,600s × 2,0.20923,0.2074529264236137,0.21101824317166157,1200.0,1007.0081940099967,2.0
+P1_validate_simulators,I,distribution,600.0,0.2,2,600s × 2,0.20901,0.20723362025656702,0.21079755778975534,1200.0,1007.0081940099967,2.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.2,3,600s × 3,0.042105,0.04123360483233117,0.04299398467768895,1800.0,1604.436188234137,3.0
+P1_validate_simulators,I,distribution,600.0,0.2,3,600s × 3,0.0412,0.04033772065613828,0.04207990361841644,1800.0,1604.436188234137,3.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.2,3,600s × 3,0.115845,0.11444976568714336,0.11725499118554969,1800.0,1604.436188234137,3.0
+P1_validate_simulators,I,distribution,600.0,0.2,3,600s × 3,0.115015,0.11362415930352875,0.11642062945266013,1800.0,1604.436188234137,3.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.2,5,600s × 5,0.01487,0.014348802234492227,0.015409833476743021,3000.0,2802.5453296775913,5.0
+P1_validate_simulators,I,distribution,600.0,0.2,5,600s × 5,0.01476,0.014240740075652026,0.015297899861106764,3000.0,2802.5453296775913,5.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.2,5,600s × 5,0.03935,0.03850671484453418,0.04021098049564375,3000.0,2802.5453296775913,5.0
+P1_validate_simulators,I,distribution,600.0,0.2,5,600s × 5,0.03933,0.038486922913913334,0.0401907731945416,3000.0,2802.5453296775913,5.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.2,10,600s × 10,0.00117,0.0010294556911867592,0.0013297062897987052,6000.0,5801.228768828478,10.0
+P1_validate_simulators,I,distribution,600.0,0.2,10,600s × 10,0.001285,0.0011372862612975096,0.0014518713020951605,6000.0,5801.228768828478,10.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.2,10,600s × 10,0.00306,0.0028272959614120815,0.003311793417396163,6000.0,5801.228768828478,10.0
+P1_validate_simulators,I,distribution,600.0,0.2,10,600s × 10,0.00336,0.003115748814690773,0.0036233290399623583,6000.0,5801.228768828478,10.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.3,1,600s × 1,0.30999,0.3079667549302072,0.31202054408550367,600.0,415.8883083359673,1.0
+P1_validate_simulators,I,distribution,600.0,0.3,1,600s × 1,0.307635,0.3056160711328139,0.30966131834751454,600.0,415.8883083359673,1.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.3,1,600s × 1,0.598975,0.596825173739849,0.6011210242493096,600.0,415.8883083359673,1.0
+P1_validate_simulators,I,distribution,600.0,0.3,1,600s × 1,0.59834,0.5961896258208013,0.6004865965611523,600.0,415.8883083359673,1.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.3,2,600s × 2,0.23315,0.23130200553385538,0.23500824520211877,1200.0,1007.0081940099967,2.0
+P1_validate_simulators,I,distribution,600.0,0.3,2,600s × 2,0.23159,0.229746367744939,0.23344394291664172,1200.0,1007.0081940099967,2.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.3,2,600s × 2,0.43181,0.42964049807695515,0.43398212136350234,1200.0,1007.0081940099967,2.0
+P1_validate_simulators,I,distribution,600.0,0.3,2,600s × 2,0.43151,0.4293406852408929,0.43368194572371965,1200.0,1007.0081940099967,2.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.3,3,600s × 3,0.1793,0.17762497972239863,0.1809873395994185,1800.0,1604.436188234137,3.0
+P1_validate_simulators,I,distribution,600.0,0.3,3,600s × 3,0.17873,0.1770570822053245,0.18041525901238736,1800.0,1604.436188234137,3.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.3,3,600s × 3,0.32666,0.3246079372502419,0.3287187214065831,1800.0,1604.436188234137,3.0
+P1_validate_simulators,I,distribution,600.0,0.3,3,600s × 3,0.32461,0.3225613195084762,0.3266654178967421,1800.0,1604.436188234137,3.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.3,5,600s × 5,0.11293,0.11155029929625382,0.11432456955281309,3000.0,2802.5453296775913,5.0
+P1_validate_simulators,I,distribution,600.0,0.3,5,600s × 5,0.1125,0.11112261531863225,0.11389227004839032,3000.0,2802.5453296775913,5.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.3,5,600s × 5,0.198815,0.19707165408217128,0.20056991559335569,3000.0,2802.5453296775913,5.0
+P1_validate_simulators,I,distribution,600.0,0.3,5,600s × 5,0.19746,0.19572117722618854,0.1992104445001057,3000.0,2802.5453296775913,5.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.3,10,600s × 10,0.0374,0.03657728902640212,0.03824048122078406,6000.0,5801.228768828478,10.0
+P1_validate_simulators,I,distribution,600.0,0.3,10,600s × 10,0.037675,0.0368493516273766,0.038518408056000715,6000.0,5801.228768828478,10.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.3,10,600s × 10,0.06608,0.06499957591083025,0.06717709262712698,6000.0,5801.228768828478,10.0
+P1_validate_simulators,I,distribution,600.0,0.3,10,600s × 10,0.065465,0.06438930893054233,0.06655738323193289,6000.0,5801.228768828478,10.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.4,1,600s × 1,0.586575,0.5844151495576844,0.5887315247632189,600.0,415.8883083359673,1.0
+P1_validate_simulators,I,distribution,600.0,0.4,1,600s × 1,0.587325,0.5851657155821061,0.5894809299284094,600.0,415.8883083359673,1.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.4,1,600s × 1,0.800685,0.7989284425618902,0.8024300069695081,600.0,415.8883083359673,1.0
+P1_validate_simulators,I,distribution,600.0,0.4,1,600s × 1,0.79964,0.7978800249650296,0.8013884647088423,600.0,415.8883083359673,1.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.4,2,600s × 2,0.529055,0.5268668594285157,0.5312420244570616,1200.0,1007.0081940099967,2.0
+P1_validate_simulators,I,distribution,600.0,0.4,2,600s × 2,0.529755,0.5275670267103285,0.5319418302855534,1200.0,1007.0081940099967,2.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.4,2,600s × 2,0.706135,0.7041346407062382,0.7081274408547135,1200.0,1007.0081940099967,2.0
+P1_validate_simulators,I,distribution,600.0,0.4,2,600s × 2,0.703765,0.7017600186570534,0.7057621539447237,1200.0,1007.0081940099967,2.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.4,3,600s × 3,0.483145,0.48095528380447145,0.48533536366097674,1800.0,1604.436188234137,3.0
+P1_validate_simulators,I,distribution,600.0,0.4,3,600s × 3,0.482595,0.4804053769959901,0.48478529159707573,1800.0,1604.436188234137,3.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.4,3,600s × 3,0.635515,0.6334031280954852,0.6376216662515806,1800.0,1604.436188234137,3.0
+P1_validate_simulators,I,distribution,600.0,0.4,3,600s × 3,0.635435,0.6333230309458213,0.6375417664743523,1800.0,1604.436188234137,3.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.4,5,600s × 5,0.410005,0.4078512296343729,0.4121622274200921,3000.0,2802.5453296775913,5.0
+P1_validate_simulators,I,distribution,600.0,0.4,5,600s × 5,0.412305,0.41014936542565,0.4144640032769591,3000.0,2802.5453296775913,5.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.4,5,600s × 5,0.53487,0.5326833801816154,0.5370552803274217,3000.0,2802.5453296775913,5.0
+P1_validate_simulators,I,distribution,600.0,0.4,5,600s × 5,0.5346,0.5324133029665489,0.5367853679142278,3000.0,2802.5453296775913,5.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.4,10,600s × 10,0.290555,0.2885692506221541,0.2925487949667389,6000.0,5801.228768828478,10.0
+P1_validate_simulators,I,distribution,600.0,0.4,10,600s × 10,0.291065,0.2890782112826384,0.29305981471519094,6000.0,5801.228768828478,10.0
+P1_validate_simulators,I,event_bernoulli,600.0,0.4,10,600s × 10,0.37151,0.3693947716973386,0.37363016409829686,6000.0,5801.228768828478,10.0
+P1_validate_simulators,I,distribution,600.0,0.4,10,600s × 10,0.372055,0.36993912755732516,0.37417578730276185,6000.0,5801.228768828478,10.0
+P2_policy_comparison,I,distribution,600.0,0.1,1,600s × 1,0.201165,0.19941388440089458,0.20292759500208404,600.0,415.8883083359673,1.0
+P2_policy_comparison,I,distribution,60.0,0.1,1,60s × 1,0.201165,0.19941388440089458,0.20292759500208404,60.0,41.58883083359673,0.1
+P2_policy_comparison,I,distribution,60.0,0.1,2,60s × 2,0.05607,0.055070250078457,0.05708680298214257,120.0,100.70081940099968,0.2
+P2_policy_comparison,I,distribution,60.0,0.1,3,60s × 3,0.017125,0.016565616579903478,0.017702932508099165,180.0,160.44361882341371,0.30000000000000004
+P2_policy_comparison,I,distribution,60.0,0.1,5,60s × 5,0.001725,0.0015524539267329019,0.001916686734565601,300.0,280.25453296775913,0.5
+P2_policy_comparison,I,distribution,60.0,0.1,10,60s × 10,1e-05,2.7423649747610273e-06,3.646417607714484e-05,600.0,580.1228768828478,1.0
+P3_decomposition,I,analytical_decomposition,,0.1,1,600s × 1,0.09999999999999995,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,1,600s × 1,0.09,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,1,600s × 1,0.009999999999999995,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,1,60s × 1,0.09999999999999995,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,1,60s × 1,0.09,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,1,60s × 1,0.009999999999999995,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,2,60s × 2,0.009999999999999998,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,2,60s × 2,0.018,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,2,60s × 2,0.024300000000000002,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,2,60s × 2,0.003699999999999997,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,3,60s × 3,0.0010000000000000005,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,3,60s × 3,0.002700000000000001,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,3,60s × 3,0.00486,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,3,60s × 3,0.007289999999999998,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,3,60s × 3,0.0012699999999999988,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,5,60s × 5,1e-05,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,5,60s × 5,4.4999999999999996e-05,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,5,60s × 5,0.00012150000000000003,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,5,60s × 5,0.0002551499999999998,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,5,60s × 5,0.0004592699999999997,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,5,60s × 5,0.0007440173999999993,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,5,60s × 5,0.00014690259999999982,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,10,60s × 10,1.0000000000000006e-10,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,10,60s × 10,9.000000000000005e-10,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,10,60s × 10,4.455000000000004e-09,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,10,60s × 10,1.6037999999999994e-08,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,10,60s × 10,4.691115000000009e-08,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,10,60s × 10,1.1821609799999999e-07,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,10,60s × 10,2.659862204999996e-07,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,10,60s × 10,5.471716535999997e-07,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,10,60s × 10,1.046465787509998e-06,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,10,60s × 10,1.8836384175180009e-06,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,10,60s × 10,3.2210216939557704e-06,,,,,
+P3_decomposition,I,analytical_decomposition,,0.1,10,60s × 10,7.088606331722185e-07,,,,,
+P4_interval_comparison,I,distribution,600.0,0.1,1,600s × 1,0.198955,0.19721118855393446,0.20071037574365344,600.0,415.8883083359673,1.0
+P4_interval_comparison,I,distribution,60.0,0.1,1,60s × 1,0.198955,0.19721118855393446,0.20071037574365344,60.0,41.58883083359673,0.1
+P4_interval_comparison,I,distribution,600.0,0.1,2,600s × 2,0.0553,0.05430680312463551,0.056310279514628844,1200.0,1007.0081940099967,2.0
+P4_interval_comparison,I,distribution,60.0,0.1,2,60s × 2,0.0553,0.05430680312463551,0.056310279514628844,120.0,100.70081940099968,0.2
+P4_interval_comparison,I,distribution,600.0,0.1,3,600s × 3,0.016725,0.016172188538503843,0.01729637591503895,1800.0,1604.436188234137,3.0
+P4_interval_comparison,I,distribution,60.0,0.1,3,60s × 3,0.016725,0.016172188538503843,0.01729637591503895,180.0,160.44361882341371,0.30000000000000004
+P4_interval_comparison,I,distribution,600.0,0.1,5,600s × 5,0.001705,0.0015335083746407898,0.0018956330549347205,3000.0,2802.5453296775913,5.0
+P4_interval_comparison,I,distribution,60.0,0.1,5,60s × 5,0.001705,0.0015335083746407898,0.0018956330549347205,300.0,280.25453296775913,0.5
+P4_interval_comparison,I,distribution,600.0,0.1,10,600s × 10,5e-06,8.826233199317767e-07,2.832410980122599e-05,6000.0,5801.228768828478,10.0
+P4_interval_comparison,I,distribution,60.0,0.1,10,60s × 10,5e-06,8.826233199317767e-07,2.832410980122599e-05,600.0,580.1228768828478,1.0
+P5_coinbase_claim,I,doublespend_break_even,,0.1,1,,0.1,,,,,
+P5_coinbase_claim,I,doublespend_break_even,,0.1,2,,0.028000000000000008,,,,,
+P5_coinbase_claim,I,doublespend_break_even,,0.1,3,,0.008560000000000002,,,,,
+P5_coinbase_claim,I,doublespend_break_even,,0.1,4,,0.0027280000000000004,,,,,
+P5_coinbase_claim,I,doublespend_break_even,,0.1,5,,0.0008909200000000001,,,,,
+P5_coinbase_claim,I,doublespend_break_even,,0.1,10,,3.929882327128003e-06,,,,,
+P5_coinbase_claim,I,sniping_break_even,,0.1,1,,0.010000000000000002,,,,,
+P5_coinbase_claim,I,sniping_break_even,,0.1,2,,0.0037000000000000006,,,,,
+P5_coinbase_claim,I,sniping_break_even,,0.1,2,,0.0004600000000000001,,,,,
+P5_coinbase_claim,I,sniping_break_even,,0.1,3,,0.00017650000000000003,,,,,
+P5_coinbase_claim,I,sniping_break_even,,0.1,5,,3.4135300000000013e-06,,,,,
+P5_coinbase_claim,I,sniping_break_even,,0.1,10,,5.399429695596105e-10,,,,,
+P6_equal_chainwork,I,distribution,600.0,0.1,1,600s × 1,0.201175,0.19942385153998884,0.20293762747885122,600.0,415.8883083359673,1.0
+P6_equal_chainwork,I,distribution,60.0,0.1,10,60s × 10,5e-06,8.826233199317767e-07,2.832410980122599e-05,600.0,580.1228768828478,1.0
+P6_equal_chainwork,I,distribution,600.0,0.1,2,600s × 2,0.05569,0.05469347731741068,0.05670359034045204,1200.0,1007.0081940099967,2.0
+P6_equal_chainwork,I,distribution,60.0,0.1,20,60s × 20,0.0,0.0,1.920692519040967e-05,1200.0,1180.0603453983404,2.0
+P6_equal_chainwork,I,distribution,600.0,0.1,3,600s × 3,0.01652,0.01597058869028012,0.017087983638102,1800.0,1604.436188234137,3.0
+P6_equal_chainwork,I,distribution,60.0,0.1,30,60s × 30,0.0,0.0,1.920692519040967e-05,1800.0,1780.0399882932738,3.0
+P7_equal_elapsed_time,I,finite_horizon,600.0,0.1,1,"1 conf, 600s",0.00041,0.0003303561012696571,0.0005088350742420965,,,
+P7_equal_elapsed_time,I,finite_horizon,60.0,0.1,1,"1 conf, 60s",0.02451,0.023841410949339528,0.025196854452378053,,,
+P7_equal_elapsed_time,I,finite_horizon,600.0,0.1,1,"1 conf, 600s",0.00161,0.001443603801320912,0.0017955412775703848,,,
+P7_equal_elapsed_time,I,finite_horizon,60.0,0.1,1,"1 conf, 60s",0.112985,0.1116050035223589,0.11437986321394623,,,
+P7_equal_elapsed_time,I,finite_horizon,600.0,0.1,1,"1 conf, 600s",0.003295,0.003053205133672971,0.003555875217880435,,,
+P7_equal_elapsed_time,I,finite_horizon,60.0,0.1,1,"1 conf, 60s",0.155595,0.15401304661569473,0.15719018330644574,,,
+P7_equal_elapsed_time,I,finite_horizon,600.0,0.1,1,"1 conf, 600s",0.0082,0.007814104924198222,0.008604787007419068,,,
+P7_equal_elapsed_time,I,finite_horizon,60.0,0.1,1,"1 conf, 60s",0.191025,0.18930809760547906,0.19275377131394236,,,
+P7_equal_elapsed_time,I,finite_horizon,600.0,0.1,1,"1 conf, 600s",0.02443,0.02376249146202187,0.02511577701280374,,,
+P7_equal_elapsed_time,I,finite_horizon,60.0,0.1,1,"1 conf, 60s",0.20014,0.19839226168220683,0.20189925709496842,,,
+P7_equal_elapsed_time,I,finite_horizon,600.0,0.1,1,"1 conf, 600s",0.077415,0.07625185172498679,0.07859438139197639,,,
+P7_equal_elapsed_time,I,finite_horizon,60.0,0.1,1,"1 conf, 60s",0.20039,0.1986414363019215,0.20215007287179115,,,
+P7_equal_elapsed_time,I,finite_horizon,600.0,0.1,1,"1 conf, 600s",0.11265,0.1112718066762308,0.11404307292871421,,,
+P7_equal_elapsed_time,I,finite_horizon,60.0,0.1,1,"1 conf, 60s",0.198395,0.19665305269464878,0.20014853311469533,,,
+P7_equal_elapsed_time,I,finite_horizon,600.0,0.1,1,"1 conf, 600s",0.15445,0.15287285153895055,0.15604042236704857,,,
+P7_equal_elapsed_time,I,finite_horizon,60.0,0.1,1,"1 conf, 60s",0.199625,0.19787896533680957,0.2013825732234986,,,
+P7_equal_elapsed_time,I,finite_horizon,600.0,0.1,1,"1 conf, 600s",0.196315,0.19458002421369475,0.19806164149645816,,,
+P7_equal_elapsed_time,I,finite_horizon,60.0,0.1,1,"1 conf, 60s",0.200055,0.19830754255496594,0.20181397948738658,,,
+P8_frontier,I,distribution,600.0,0.05,1,600s × 1,0.100585,0.09927446654713164,0.1019108765209182,600.0,415.8883083359673,1.0
+P8_frontier,I,distribution,600.0,0.05,2,600s × 2,0.014435,0.013921509979807319,0.014967142441452846,1200.0,1007.0081940099967,2.0
+P8_frontier,I,distribution,600.0,0.05,3,600s × 3,0.00237,0.002166241549043268,0.0025928743353217398,1800.0,1604.436188234137,3.0
+P8_frontier,I,distribution,600.0,0.05,5,600s × 5,7.5e-05,4.5453456606938166e-05,0.00012375058754469294,3000.0,2802.5453296775913,5.0
+P8_frontier,I,distribution,600.0,0.05,10,600s × 10,0.0,0.0,1.920692519040967e-05,6000.0,5801.228768828478,10.0
+P8_frontier,I,distribution,60.0,0.05,1,60s × 1,0.100585,0.09927446654713164,0.1019108765209182,60.0,41.58883083359673,0.1
+P8_frontier,I,distribution,60.0,0.05,2,60s × 2,0.014435,0.013921509979807319,0.014967142441452846,120.0,100.70081940099968,0.2
+P8_frontier,I,distribution,60.0,0.05,3,60s × 3,0.00237,0.002166241549043268,0.0025928743353217398,180.0,160.44361882341371,0.30000000000000004
+P8_frontier,I,distribution,60.0,0.05,5,60s × 5,7.5e-05,4.5453456606938166e-05,0.00012375058754469294,300.0,280.25453296775913,0.5
+P8_frontier,I,distribution,60.0,0.05,10,60s × 10,0.0,0.0,1.920692519040967e-05,600.0,580.1228768828478,1.0
+P8_frontier,I,distribution,600.0,0.1,1,600s × 1,0.199575,0.19782913098227206,0.20133240949872863,600.0,415.8883083359673,1.0
+P8_frontier,I,distribution,600.0,0.1,2,600s × 2,0.05619,0.05518923365544753,0.05720781479548999,1200.0,1007.0081940099967,2.0
+P8_frontier,I,distribution,600.0,0.1,3,600s × 3,0.017045,0.01648692446235776,0.017621627698752914,1800.0,1604.436188234137,3.0
+P8_frontier,I,distribution,600.0,0.1,5,600s × 5,0.00156,0.0013963461543115786,0.001742800845272237,3000.0,2802.5453296775913,5.0
+P8_frontier,I,distribution,600.0,0.1,10,600s × 10,1e-05,2.7423649747610273e-06,3.646417607714484e-05,6000.0,5801.228768828478,10.0
+P8_frontier,I,distribution,60.0,0.1,1,60s × 1,0.199575,0.19782913098227206,0.20133240949872863,60.0,41.58883083359673,0.1
+P8_frontier,I,distribution,60.0,0.1,2,60s × 2,0.05619,0.05518923365544753,0.05720781479548999,120.0,100.70081940099968,0.2
+P8_frontier,I,distribution,60.0,0.1,3,60s × 3,0.017045,0.01648692446235776,0.017621627698752914,180.0,160.44361882341371,0.30000000000000004
+P8_frontier,I,distribution,60.0,0.1,5,60s × 5,0.00156,0.0013963461543115786,0.001742800845272237,300.0,280.25453296775913,0.5
+P8_frontier,I,distribution,60.0,0.1,10,60s × 10,1e-05,2.7423649747610273e-06,3.646417607714484e-05,600.0,580.1228768828478,1.0
+P8_frontier,I,distribution,600.0,0.2,1,600s × 1,0.39849,0.39634629791477244,0.40063760147517974,600.0,415.8883083359673,1.0
+P8_frontier,I,distribution,600.0,0.2,2,600s × 2,0.209495,0.2077170917163672,0.2112840676992377,1200.0,1007.0081940099967,2.0
+P8_frontier,I,distribution,600.0,0.2,3,600s × 3,0.11592,0.11452436981110396,0.11733038418055028,1800.0,1604.436188234137,3.0
+P8_frontier,I,distribution,600.0,0.2,5,600s × 5,0.03936,0.0385166108322045,0.040221084123834926,3000.0,2802.5453296775913,5.0
+P8_frontier,I,distribution,600.0,0.2,10,600s × 10,0.003175,0.0029378049102917075,0.0034312800509237436,6000.0,5801.228768828478,10.0
+P8_frontier,I,distribution,60.0,0.2,1,60s × 1,0.39849,0.39634629791477244,0.40063760147517974,60.0,41.58883083359673,0.1
+P8_frontier,I,distribution,60.0,0.2,2,60s × 2,0.209495,0.2077170917163672,0.2112840676992377,120.0,100.70081940099968,0.2
+P8_frontier,I,distribution,60.0,0.2,3,60s × 3,0.11592,0.11452436981110396,0.11733038418055028,180.0,160.44361882341371,0.30000000000000004
+P8_frontier,I,distribution,60.0,0.2,5,60s × 5,0.03936,0.0385166108322045,0.040221084123834926,300.0,280.25453296775913,0.5
+P8_frontier,I,distribution,60.0,0.2,10,60s × 10,0.003175,0.0029378049102917075,0.0034312800509237436,600.0,580.1228768828478,1.0
+P8_frontier,I,distribution,600.0,0.3,1,600s × 1,0.600925,0.5987768797947556,0.6030692432873949,600.0,415.8883083359673,1.0
+P8_frontier,I,distribution,600.0,0.3,2,600s × 2,0.433145,0.4309746750335953,0.4353178931243719,1200.0,1007.0081940099967,2.0
+P8_frontier,I,distribution,600.0,0.3,3,600s × 3,0.329355,0.32729855869348,0.3314179964380182,1800.0,1604.436188234137,3.0
+P8_frontier,I,distribution,600.0,0.3,5,600s × 5,0.196175,0.19444049615719983,0.19792117493089212,3000.0,2802.5453296775913,5.0
+P8_frontier,I,distribution,600.0,0.3,10,600s × 10,0.064685,0.06361535121938178,0.06577137090589676,6000.0,5801.228768828478,10.0
+P8_frontier,I,distribution,60.0,0.3,1,60s × 1,0.600925,0.5987768797947556,0.6030692432873949,60.0,41.58883083359673,0.1
+P8_frontier,I,distribution,60.0,0.3,2,60s × 2,0.433145,0.4309746750335953,0.4353178931243719,120.0,100.70081940099968,0.2
+P8_frontier,I,distribution,60.0,0.3,3,60s × 3,0.329355,0.32729855869348,0.3314179964380182,180.0,160.44361882341371,0.30000000000000004
+P8_frontier,I,distribution,60.0,0.3,5,60s × 5,0.196175,0.19444049615719983,0.19792117493089212,300.0,280.25453296775913,0.5
+P8_frontier,I,distribution,60.0,0.3,10,60s × 10,0.064685,0.06361535121938178,0.06577137090589676,600.0,580.1228768828478,1.0
+P8_frontier,I,distribution,600.0,0.4,1,600s × 1,0.80073,0.7989735901518051,0.8024748576509699,600.0,415.8883083359673,1.0
+P8_frontier,I,distribution,600.0,0.4,2,600s × 2,0.705325,0.7033230537186096,0.7073190589575609,1200.0,1007.0081940099967,2.0
+P8_frontier,I,distribution,600.0,0.4,3,600s × 3,0.634975,0.6328624735554117,0.6370823415351331,1800.0,1604.436188234137,3.0
+P8_frontier,I,distribution,600.0,0.4,5,600s × 5,0.53312,0.5309328911443499,0.5353058365889255,3000.0,2802.5453296775913,5.0
+P8_frontier,I,distribution,600.0,0.4,10,600s × 10,0.372495,0.37037860962025204,0.3746162883377408,6000.0,5801.228768828478,10.0
+P8_frontier,I,distribution,60.0,0.4,1,60s × 1,0.80073,0.7989735901518051,0.8024748576509699,60.0,41.58883083359673,0.1
+P8_frontier,I,distribution,60.0,0.4,2,60s × 2,0.705325,0.7033230537186096,0.7073190589575609,120.0,100.70081940099968,0.2
+P8_frontier,I,distribution,60.0,0.4,3,60s × 3,0.634975,0.6328624735554117,0.6370823415351331,180.0,160.44361882341371,0.30000000000000004
+P8_frontier,I,distribution,60.0,0.4,5,60s × 5,0.53312,0.5309328911443499,0.5353058365889255,300.0,280.25453296775913,0.5
+P8_frontier,I,distribution,60.0,0.4,10,60s × 10,0.372495,0.37037860962025204,0.3746162883377408,600.0,580.1228768828478,1.0
+R1_finite_duration,II,finite_horizon,600.0,0.1,1,600s × 1,0.00037,0.00029476698056952924,0.00046442573149623964,,,
+R1_finite_duration,II,finite_horizon,600.0,0.1,1,600s × 1,0.00159,0.0014246955525748489,0.0017744502945934554,,,
+R1_finite_duration,II,finite_horizon,600.0,0.1,1,600s × 1,0.008305,0.00791660234473465,0.008712285553428348,,,
+R1_finite_duration,II,finite_horizon,600.0,0.1,1,600s × 1,0.02463,0.023959793732792684,0.025318467059262845,,,
+R1_finite_duration,II,finite_horizon,600.0,0.1,1,600s × 1,0.154685,0.1531068629024777,0.15627640197626658,,,
+R1_finite_duration,II,finite_horizon,600.0,0.1,1,600s × 1,0.195285,0.19355350440052058,0.19702820087589823,,,
+R1_finite_duration,II,finite_horizon,600.0,0.1,1,600s × 1,0.19978,0.19803345210837234,0.20153808049778907,,,
+R1_finite_duration,II,finite_horizon,600.0,0.1,1,600s × 1,0.198965,0.1972211553148358,0.20072040859861362,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,1,60s × 1,0.02525,0.024571504938831357,0.02594673203663694,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,1,60s × 1,0.112325,0.11094855972239719,0.11371633236704917,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,1,60s × 1,0.190585,0.18886962339257737,0.19231226242893826,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,1,60s × 1,0.199515,0.19776932981345557,0.20127221297237613,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,1,60s × 1,0.199615,0.1978689984624707,0.20137254048197598,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,1,60s × 1,0.200005,0.19825770783199032,0.20176381613105468,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,1,60s × 1,0.19978,0.19803345210837234,0.20153808049778907,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,1,60s × 1,0.198965,0.1972211553148358,0.20072040859861362,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,2,60s × 2,0.000475,0.0003886203467365951,0.0005805683318748838,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,2,60s × 2,0.004865,0.00456942390564819,0.005179596136160119,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,2,60s × 2,0.039675,0.038828342042219244,0.040539340813457315,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,2,60s × 2,0.05506,0.05406885670241455,0.056068235156173894,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,2,60s × 2,0.055495,0.054500138485353566,0.05650693666320997,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,2,60s × 2,0.05584,0.054842201847295054,0.0568548600484901,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,2,60s × 2,0.057535,0.05652292872981562,0.05856406805449314,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,2,60s × 2,0.05602,0.05502067397020215,0.05703638101108993,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,3,60s × 3,5e-06,8.826233199317767e-07,2.832410980122599e-05,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,3,60s × 3,0.000155,0.00010920390367427027,0.00021999706736933037,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,3,60s × 3,0.00556,0.005243479900073328,0.0058955134441089655,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,3,60s × 3,0.016025,0.015483891242772442,0.016584700100465616,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,3,60s × 3,0.016915,0.01635905667460761,0.01748950048030361,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,3,60s × 3,0.017475,0.01690993204571564,0.018058603597439372,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,3,60s × 3,0.01686,0.016304961357114404,0.017433597910558585,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,3,60s × 3,0.016765,0.01621152765127599,0.017337035265712782,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,5,60s × 5,0.0,0.0,1.920692519040967e-05,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,5,60s × 5,0.0,0.0,1.920692519040967e-05,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,5,60s × 5,2.5e-05,1.0678551460593864e-05,5.8527413383556285e-05,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,5,60s × 5,0.000865,0.0007453911565162184,0.0010037825406936118,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,5,60s × 5,0.00167,0.0015003686796733525,0.0018587740943869213,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,5,60s × 5,0.001735,0.001561928999754652,0.001927211277405347,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,5,60s × 5,0.00165,0.0014814404866797842,0.001837703055657497,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,5,60s × 5,0.00172,0.0015477169619741479,0.0019114238913936067,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,10,60s × 10,0.0,0.0,1.920692519040967e-05,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,10,60s × 10,0.0,0.0,1.920692519040967e-05,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,10,60s × 10,0.0,0.0,1.920692519040967e-05,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,10,60s × 10,0.0,0.0,1.920692519040967e-05,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,10,60s × 10,1e-05,2.7423649747610273e-06,3.646417607714484e-05,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,10,60s × 10,1e-05,2.7423649747610273e-06,3.646417607714484e-05,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,10,60s × 10,1e-05,2.7423649747610273e-06,3.646417607714484e-05,,,
+R1_finite_duration,II,finite_horizon,60.0,0.1,10,60s × 10,0.0,0.0,1.920692519040967e-05,,,
+R2_start_time,II,finite_horizon,60.0,0.1,2,60s × 2,0.055555,0.054559626987826265,0.05656744585590624,,,
+R2_start_time,II,finite_horizon,60.0,0.1,2,60s × 2,0.055805,0.05480749927458207,0.056819563965687846,,,
+R2_start_time,II,finite_horizon,60.0,0.1,2,60s × 2,0.050015,0.04906830888965701,0.05097897676680659,,,
+R2_start_time,II,finite_horizon,60.0,0.1,2,60s × 2,0.05018,0.049231814445254304,0.051145464872924006,,,
+R2_start_time,II,finite_horizon,60.0,0.1,2,60s × 2,0.049605,0.04866203485487273,0.050565266551269555,,,
+R2_start_time,II,finite_horizon,60.0,0.1,2,60s × 2,0.050275,0.04932595530864882,0.0512413203602137,,,
+R2_start_time,II,finite_horizon,60.0,0.1,2,60s × 2,0.049715,0.04877103344857323,0.05067626373204551,,,
+R2_start_time,II,finite_horizon,60.0,0.1,2,60s × 2,0.05086,0.04990568562438444,0.051831567572375614,,,
+R2_start_time,II,finite_horizon,60.0,0.1,2,60s × 2,0.049785,0.04884039686237839,0.050746897629270815,,,
+R2_start_time,II,finite_horizon,60.0,0.1,2,60s × 2,0.000185,0.00013422787885250534,0.0002549719397755839,,,
+R2_start_time,II,finite_horizon,60.0,0.1,2,60s × 2,0.00132,0.001170168526035638,0.0014889876928722689,,,
+R2_start_time,II,finite_horizon,60.0,0.1,2,60s × 2,0.009435,0.009020634170527524,0.009868210319984545,,,
+R2_start_time,II,finite_horizon,60.0,0.1,2,60s × 2,0.056145,0.05514461466249584,0.057162435517064944,,,
+R2_start_time,II,finite_horizon,60.0,0.1,2,60s × 2,0.278745,0.2767841801988618,0.2807143190576042,,,
+R2_start_time,II,finite_horizon,60.0,0.1,2,60s × 2,1.0,0.9999807930748096,1.0,,,
+R2_start_time,II,finite_horizon,60.0,0.1,2,60s × 2,1.0,0.9999807930748096,1.0,,,
+R3_abandonment,II,finite_horizon,60.0,0.1,2,60s × 2,0.05632,0.055318133988046775,0.0573389094690902,,,
+R3_abandonment,II,finite_horizon,60.0,0.1,2,60s × 2,0.043915,0.0430257022089092,0.04482181777204174,,,
+R3_abandonment,II,finite_horizon,60.0,0.1,2,60s × 2,0.05201,0.05104542892815201,0.052991780092680095,,,
+R3_abandonment,II,finite_horizon,60.0,0.1,2,60s × 2,0.05403,0.05304773076255503,0.05502940066229931,,,
+R3_abandonment,II,finite_horizon,60.0,0.1,2,60s × 2,0.05623,0.0552288951350143,0.057248151779369205,,,
+R3_abandonment,II,finite_horizon,60.0,0.1,2,60s × 2,0.055415,0.05442082099337116,0.0564262572283004,,,
+R3_abandonment,II,finite_horizon,60.0,0.1,2,60s × 2,0.055465,0.05447039435732825,0.05647668194365079,,,
+R3_abandonment,II,finite_horizon,60.0,0.1,2,60s × 2,0.05613,0.05512974170524636,0.057147309050522184,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.05545,0.05445552232414579,0.056461554553041006,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.054895,0.05390527161950618,0.05590182657736758,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.050035,0.04908812759177578,0.05099915729641083,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.04414,0.04324850641082254,0.04504900492701206,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.027635,0.02692560382637553,0.02836254153205961,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.016905,0.016349221047204734,0.01747933649184499,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.01452,0.014004994436050982,0.0150536547200319,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.014555,0.014039371734455946,0.015089276077142173,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.05693,0.0559229941096594,0.05795402591502884,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.055575,0.054579456561596414,0.05658761551385909,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.056565,0.05556106564126366,0.05758596840447996,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.054595,0.05360785066959769,0.055599259051431184,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.05615,0.05514957231940285,0.05716747766808868,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.05541,0.0544158636695487,0.056421214744192115,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.055715,0.054718264597330445,0.056728802100186,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.055445,0.05445056498432102,0.05645651208493503,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.055905,0.05490664977636977,0.056920409622515114,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.057705,0.05669151113568772,0.05873547911826647,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.069505,0.06839870215546436,0.07062783481505532,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.084265,0.08305554718729696,0.08549042279479112,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.14105,0.1395314237149814,0.14258236493661283,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.1877,0.1859947148609096,0.18941728178456438,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.20759,0.2058181176511143,0.20937311494287558,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.20874,0.20696447285706757,0.21052671556099442,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.05648,0.05547678262502847,0.05750025468589244,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.061705,0.06065885503230474,0.06276798156624792,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.08869,0.08745192867526573,0.0899438713255344,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.125725,0.12427917704443008,0.12718520029942124,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.2809,0.278934506683161,0.2828739097914574,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.411605,0.4094499276439942,0.41376346794831026,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.507765,0.5055738298099542,0.5099558719064976,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.508445,0.5062538650628756,0.510635810532158,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.05542,0.05442577831948053,0.05643129971012177,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.064395,0.06332760909318978,0.06547912417210533,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.09936,0.0980566494232303,0.10067874070178627,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.15056,0.14899940471024115,0.15213401862563594,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.364425,0.36231840895677403,0.36653679900099134,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.54317,0.5409860682237595,0.5453522734503196,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.690685,0.688655660816606,0.6927070142383341,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.70437,0.7023661923841236,0.7063659569772742,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.056605,0.05560072845938169,0.057626304049807925,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.06646,0.06537666497514091,0.0675599889655532,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.115625,0.11423092800866398,0.11703383731507615,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.18946,0.18774854049315698,0.1911833885439403,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.47823,0.47604121081733264,0.48041962545219014,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.698805,0.696790554214224,0.7008118089202512,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.898065,0.8967313294605839,0.8993833793300644,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.94934,0.9483702223404702,0.9502925167799997,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.05608,0.055080165327108695,0.05709688734935236,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.068865,0.06776347593959867,0.06998308561578526,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.13244,0.13096148951997025,0.13393262987487578,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.22797,0.2261366275768282,0.22981382214289095,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.57958,0.5774151184141303,0.5817418246116565,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.823645,0.8219684785029607,0.8253090890464327,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.985415,0.984880191952729,0.9859311613880885,,,
+R4_temporary_majority,II,external_hash,600.0,0.1,2,,0.999665,0.9995746300344666,0.999736175908983,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.0563,0.05529830306917323,0.057318741156240756,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.187695,0.1859897324826388,0.1894122643549044,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.41346,0.4113034476038894,0.41561987673072254,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.538605,0.5364195143936972,0.5407890026396088,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.69988,0.6978675816496738,0.701884740189912,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.05559,0.054594328765840146,0.056602742733407596,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.184045,0.1823527200295306,0.18574941701856648,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.4081,0.4059478105640305,0.4102557196688195,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.53173,0.5295425219643928,0.5339162591641348,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.69164,0.6896123741678405,0.6936602642018727,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.05573,0.05473313699251928,0.056743929128789415,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.17139,0.16974473043498028,0.17304789274039337,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.37716,0.37503823349119153,0.3792864852661892,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.496465,0.49427383735448965,0.4986562984384714,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.654685,0.6525982421841037,0.6567658157694501,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.055905,0.05490664977636977,0.056920409622515114,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.15565,0.15406781657287788,0.1572454112365008,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.342225,0.34014869792196917,0.3443073628232747,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.449185,0.44700603636425323,0.4513659156355539,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.60456,0.6024151548234409,0.6067008286243633,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.056125,0.055124784057321324,0.05714226689051647,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.10696,0.10561304032240143,0.10832205785735224,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.205635,0.20386936371538697,0.20741194397768045,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.275875,0.27392049203461327,0.2778381174696033,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.391015,0.3888784953607519,0.39315569117273186,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.056225,0.05522393744222451,0.057243109664228235,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.06905,0.06794709319365394,0.07016946125516767,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.100855,0.09954289154307713,0.10218244115323312,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.126875,0.12542348532445727,0.12834084784346608,,,
+R5_acquisition_delay,II,external_hash,600.0,0.1,2,,0.181395,0.17971230617899878,0.18308993266580184,,,
+R6_external_threshold,II,analytical,,0.1,1,,0.5,,,,,
+R6_external_threshold,II,analytical,,0.1,2,,0.5,,,,,
+R6_external_threshold,II,analytical,,0.1,3,,0.5,,,,,
+R6_external_threshold,II,analytical,,0.1,5,,0.5,,,,,
+R6_external_threshold,II,analytical,,0.1,10,,0.5,,,,,
+R6_external_threshold,II,analytical,,0.1,1,,0.25,,,,,
+R6_external_threshold,II,analytical,,0.1,2,,0.25,,,,,
+R6_external_threshold,II,analytical,,0.1,3,,0.25,,,,,
+R6_external_threshold,II,analytical,,0.1,5,,0.25,,,,,
+R6_external_threshold,II,analytical,,0.1,10,,0.25,,,,,
+R6_external_threshold,II,analytical,,0.1,1,,0.1,,,,,
+R6_external_threshold,II,analytical,,0.1,2,,0.1,,,,,
+R6_external_threshold,II,analytical,,0.1,3,,0.1,,,,,
+R6_external_threshold,II,analytical,,0.1,5,,0.1,,,,,
+R6_external_threshold,II,analytical,,0.1,10,,0.1,,,,,
+R6_external_threshold,II,analytical,,0.1,1,,0.05,,,,,
+R6_external_threshold,II,analytical,,0.1,2,,0.05,,,,,
+R6_external_threshold,II,analytical,,0.1,3,,0.05,,,,,
+R6_external_threshold,II,analytical,,0.1,5,,0.05,,,,,
+R6_external_threshold,II,analytical,,0.1,10,,0.05,,,,,
+R6_external_threshold,II,analytical,,0.1,1,,0.01,,,,,
+R6_external_threshold,II,analytical,,0.1,2,,0.01,,,,,
+R6_external_threshold,II,analytical,,0.1,3,,0.01,,,,,
+R6_external_threshold,II,analytical,,0.1,5,,0.01,,,,,
+R6_external_threshold,II,analytical,,0.1,10,,0.01,,,,,
+R7_economics,II,economic,600.0,0.1,1,600s × 1,0.19999999999999998,,,,,
+R7_economics,II,economic,600.0,0.1,2,600s × 2,0.055999999999999925,,,,,
+R7_economics,II,economic,600.0,0.1,3,600s × 3,0.017119999999999906,,,,,
+R7_economics,II,economic,600.0,0.1,5,600s × 5,0.0017818400000000187,,,,,
+R7_economics,II,economic,600.0,0.1,10,600s × 10,7.859764652798608e-06,,,,,
+R7_economics,II,economic,60.0,0.1,1,60s × 1,0.19999999999999998,,,,,
+R7_economics,II,economic,60.0,0.1,2,60s × 2,0.055999999999999925,,,,,
+R7_economics,II,economic,60.0,0.1,3,60s × 3,0.017119999999999906,,,,,
+R7_economics,II,economic,60.0,0.1,5,60s × 5,0.0017818400000000187,,,,,
+R7_economics,II,economic,60.0,0.1,10,60s × 10,7.859764652798608e-06,,,,,
+R8_cost_accounting,II,cost,600.0,0.1,1,600s × 1,0.19999999999999998,,,,,
+R8_cost_accounting,II,cost,600.0,0.1,2,600s × 2,0.055999999999999925,,,,,
+R8_cost_accounting,II,cost,600.0,0.1,3,600s × 3,0.017119999999999906,,,,,
+R8_cost_accounting,II,cost,600.0,0.1,5,600s × 5,0.0017818400000000187,,,,,
+R8_cost_accounting,II,cost,600.0,0.1,10,600s × 10,7.859764652798608e-06,,,,,
+R8_cost_accounting,II,cost,60.0,0.1,1,60s × 1,0.19999999999999998,,,,,
+R8_cost_accounting,II,cost,60.0,0.1,2,60s × 2,0.055999999999999925,,,,,
+R8_cost_accounting,II,cost,60.0,0.1,3,60s × 3,0.017119999999999906,,,,,
+R8_cost_accounting,II,cost,60.0,0.1,5,60s × 5,0.0017818400000000187,,,,,
+R8_cost_accounting,II,cost,60.0,0.1,10,60s × 10,7.859764652798608e-06,,,,,
