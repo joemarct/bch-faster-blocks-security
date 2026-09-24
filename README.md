@@ -106,5 +106,5 @@ Run the suite with:
 .venv/bin/python -m pytest
 ```
 
-See `CLAIMS.md` for the claim matrix, `HYPOTHESES.md` for the pre-registered
-hypotheses, and `REPORT.md` for the findings.
+See [CLAIMS.md](CLAIMS.md) for the claim matrix, [HYPOTHESES.md](HYPOTHESES.md)
+for the pre-registered hypotheses, and [REPORT.md](REPORT.md) for the findings.
