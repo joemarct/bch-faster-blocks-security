@@ -445,27 +445,30 @@ while reaching 50% at depth 10 requires 0.479 — depth, again, is the defense.
 
 ## Economic Attack Viability
 
-`R7_economics` (`q = 0.10`, transaction value `V = 200 000`, coinbase-denominated):
+`R7_economics` (`q = 0.10`, attack value `V = 1 000 000`, coinbase-denominated):
 
-| Policy | Break-even V/C | Expected value |
-|---|---|---|
-| 600 s × 1 | 5.0 | 199 999.0 |
-| 600 s × 2 | 35.714 | 55 998.0 |
-| 600 s × 3 | 175.234 | 17 117.0 |
-| 600 s × 5 | 2806.088 | 1776.84 |
-| 600 s × 10 | 1 272 302.7 | −2.14 |
-| 60 s × 1 | 500.0 | 199 990.0 |
-| 60 s × 2 | 3571.429 | 55 980.0 |
-| 60 s × 3 | 17 523.36 | 17 090.0 |
-| 60 s × 5 | 280 608.8 | 1731.84 |
-| 60 s × 10 | 127 230 272.7 | −92.14 |
+| Policy | Break-even attack value V | Reward multiple V/C | Expected value |
+|---|---|---|---|
+| 600 s × 1 | 5.00 | 5.00 | 199 999.0 |
+| 600 s × 2 | 35.714 | 35.714 | 55 998.0 |
+| 600 s × 3 | 175.234 | 175.234 | 17 117.0 |
+| 600 s × 5 | 2 806.088 | 2 806.088 | 1 776.84 |
+| 600 s × 10 | 1 272 302.7 | 1 272 302.7 | −2.14 |
+| 60 s × 1 | 50.00 | 500.00 | 199 990.0 |
+| 60 s × 2 | 357.143 | 3 571.429 | 55 980.0 |
+| 60 s × 3 | 1 752.336 | 17 523.36 | 17 090.0 |
+| 60 s × 5 | 28 060.881 | 280 608.8 | 1 731.84 |
+| 60 s × 10 | 12 723 027.3 | 127 230 272.7 | −92.14 |
 
-The 60 s break-even values are exactly 10× the 600 s values at fixed count
-because the forfeited coinbase per confirmation scales with the interval —
-the attacker forfeits 1/10 as much per fast block. Expected value at fixed
-confirmation count is essentially unchanged (`199 999` vs `199 990`; `55 998`
-vs `55 980`). The security benefit of faster blocks is therefore *not* a
-per-coinbase-cost effect; it is the depth effect of §"Why the Result Occurs".
+At a fixed confirmation count the absolute break-even attack value for 60 s
+blocks is exactly **10×** the 600 s value (`5.00 → 50.00`), and the reward
+multiple `V/C` is **100×** (`5.00 → 500.00`); both follow from the R7
+work-normalization, in which a fast block's reference coinbase is `1/10` and
+its work-normalized cost is `10×`. Expected attacker value at fixed count is
+essentially unchanged (`199 999` vs `199 990`; `55 998` vs `55 980`), so faster
+blocks do **not** improve attack profitability at equal confirmation count. The
+interval-invariant dimensionless target — the Fablous `X/C = (m−1)/P` — is
+reproduced exactly in §"36× Coinbase Reproduction" (`35.714` at `m = 2`).
 
 `R8_cost_accounting` confirms the proponent's cost claim (C4) at the level of
 normalized work:
@@ -553,50 +556,60 @@ this model.
 
 ## Conclusions
 
-1. **The proponent's central mathematical claims replicate.** Interval
-   invariance of one-confirmation minority security (C1) is exact, not an
-   approximation: `1×60 s` and `1×600 s` both yield `P = 0.201165` at
-   `q = 0.10`. The 2×60 s advantage (C2) and the ~36× coinbase target (C3)
-   reproduce to machine precision (`0.056070` vs `0.201165`, a **≈3.6×**
-   reduction; `X/C = 35.714`). The Stone fork-matching thresholds (C6/C7)
-   reproduce within their bisection brackets (`0.5105 → 0.5716` at even odds,
-   `0.3322 → 0.4498` at 10%).
+1. **The proponent's central claims replicate numerically.** Interval
+   invariance of one-confirmation minority security (C1) is exact, not
+   approximate: `1×60 s` and `1×600 s` both give `P = 0.201165` at
+   `q = 0.10`. Two fast confirmations cut attacker success to `P = 0.056070`
+   — **≈3.6×** lower than `1×600 s`, at one-fifth the expected wait. The
+   coinbase target (C3) reproduces to machine precision (`X/C = 35.714 ≈ 36`
+   at `m = 2, q = 0.10`), and the Stone fork-matching thresholds land on
+   their bisection brackets (`0.5105 → 0.5716` at even odds; `0.3322 → 0.4498`
+   at 10%).
 
-2. **Confirmation count is the dominant security variable.** In the race
-   model, security is governed by depth `z`, not by chainwork and not by
-   wall-clock time in isolation. Equal work with finer granularity is strictly
-   safer (`1×600 s` `0.201175` vs `10×60 s` `0.000005`), and time-to-security
-   compresses ~10–30× because confirmations accrue ten times faster. Catch-up
-   difficulty at depth — not the probability of being behind — drives the
-   reversal, which is why the decomposition (P3) shows deep deficits being
-   common yet harmless.
+2. **Confirmation count — not chainwork and not wall-clock time — governs
+   security.** Equal work with more confirmations is strictly safer
+   (`1×600 s` `P = 0.201175` vs `10×60 s` `P = 0.000005`). Faster blocks
+   shorten *time-to-security* rather than lowering the asymptotic risk: the
+   60 s chain reaches its terminal `P ≈ 0.20` within ~10 min, whereas the
+   600 s chain is still at `0.024` after 10 min and needs ~60 min to converge
+   (`0.196`). The decomposition (P3) shows why depth is decisive: at `z = 10`
+   the attacker ends a full 10 blocks behind with probability `0.35`, yet
+   catching up from there costs only `2.9e-10`.
 
-3. **The security gain is real but conditional.** It requires the merchant to
-   actually wait for the extra fast confirmation(s). It is erased by a single
-   pre-mined attacker block (`P` rises to `0.279`, and to `1.0` at two) and
-   substantially weakened if the attacker can acquire external hashpower above
-   the honest baseline for a sustained window (R4/R5). Reactive timing and
-   moderate abandonment policies move the result only slightly (R2/R3).
+3. **The gain is conditional on how the merchant waits and on the attacker's
+   start.** The central 2×60 s result assumes the merchant requires *both*
+   confirmations. A single pre-mined attacker block raises `P` from `0.055555`
+   to `0.278745`, and two make it `1.0`; one honest-block head start cuts it to
+   `0.009435`. Reactive attack timing (0–600 s delay) leaves `P` at
+   `0.0496–0.0509`, and abandoning at a 1-block deficit lowers it to `0.043915`
+   from `0.056320` (never abandoning). The advantage therefore survives only
+   if the extra confirmation is actually required and the attacker cannot
+   front-run.
 
-4. **Economic viability tracks the same count law.** Break-even `V/C` at fixed
-   confirmation count is interval-invariant in normalized terms, and faster
-   blocks scale the forfeited-coinbase term linearly (10× smaller per
-   confirmation), so the 60 s break-even values are exactly 10× the 600 s
-   values. The attack cost per unit normalized work is constant (`600`),
-   consistent with C4.
+4. **Economic viability is count-driven, not interval-driven.** At a fixed
+   confirmation count, expected attacker value is essentially unchanged
+   between 60 s and 600 s blocks (`199 999` vs `199 990` at 1 conf; `55 998`
+   vs `55 980` at 2 conf), and the attack turns unprofitable at 10
+   confirmations in both (`−2.14` vs `−92.14`). The interval-invariant
+   dimensionless target `X/C = (m−1)/P` is `5.00`, `35.714`, `175.234` at
+   1–3 confirmations (C3). Faster blocks do not make an attack cheaper at
+   equal count; they only change the coinbase units in which break-even is
+   expressed.
 
-5. **Overall.** Under the stated race and cost assumptions, the proponent's
-   security argument is internally consistent and quantitatively supported:
-   deliberately chosen *fast* confirmation counts dominate equal-work or
-   equal-time *slow* policies, and the headline economic targets are exact.
-   The claims that remain unsupported here are the operational ones (C5) and
-   anything requiring a network layer (propagation, orphan rate, selfish
-   mining with `γ > 0`, partitions), which this model deliberately excludes.
+5. **The claims that remain unsupported require data this model does not
+   contain.** C5 (external SHA-256 acquisition) is analyzed only as a
+   parameter sweep, and rented hash changes outcomes only above a material
+   active share — at 0.33 active share over an 1800 s window `P` rises from
+   `0.056` to `0.281`, and at 0.5 share over 3600 s to `0.699`. Network-layer
+   effects (propagation, orphan rate, selfish mining with `γ > 0`, partitions)
+   are excluded, and C10/C11 are analytical statements about threshold
+   formulae, not simulations.
 
-6. **Scope of inference.** These conclusions describe the modeled race and
-   economics only. They are **not** a recommendation for or against
-   CHIP-2025-03 activation, which also turns on engineering, operational, and
-   ecosystem considerations outside the model.
+6. **Scope of inference.** Under the stated race and cost assumptions, the
+   proponent's security argument is quantitatively consistent and its headline
+   numbers are exact. That is a statement about the model, **not** a
+   recommendation for or against CHIP-2025-03 activation, which also turns on
+   engineering, operational, and ecosystem factors outside this model.
 
 ---
 
