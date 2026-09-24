@@ -129,7 +129,10 @@ def attack_value_multiple(
     directly comparable to the Fablous "36x coinbase" claim.
     """
     work_per_block = interval_sec / baseline_interval_sec
-    cost_per_work = coinbase_per_work / work_per_block if work_per_block else 0.0
+    # A target-chain block carries ``work_per_block`` units of baseline work,
+    # so producing one costs that fraction of ``coinbase_per_work``
+    # (plan section 5.1: W_600 = 1.0, W_60 = 0.1).
+    cost_per_work = coinbase_per_work * work_per_block
     # Reference coinbase: reward actually earned per (fast) block produced.
     ref_coinbase = coinbase_per_work * work_per_block
     return EconomicModel(

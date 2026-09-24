@@ -92,13 +92,14 @@ def test_break_even_infinite_without_success():
 
 
 def test_attack_value_multiple_normalises_work():
-    slow = attack_value_multiple(0.1, 2, 0.2, 10.0, interval_sec=600.0)
-    fast = attack_value_multiple(0.1, 2, 0.2, 1.0, interval_sec=60.0)
-    # Fast block earns 1/10 the reference coinbase and costs 1/10 per block.
-    assert fast.reference_coinbase == pytest.approx(0.1)
+    slow = attack_value_multiple(0.1, 2, 0.2, 1.0, interval_sec=600.0)
+    fast = attack_value_multiple(0.1, 2, 0.2, 10.0, interval_sec=60.0)
+    # A fast block earns 1/10 the reference coinbase and costs 1/10 per block.
     assert slow.reference_coinbase == pytest.approx(1.0)
-    # Hashing cost is work-normalised: 1 fast block == 0.1 slow blocks of work.
-    fast.reference_coinbase = slow.reference_coinbase  # compare like-for-like
+    assert fast.reference_coinbase == pytest.approx(0.1)
+    assert slow.cost_per_work == pytest.approx(1.0)
+    assert fast.cost_per_work == pytest.approx(0.1)
+    # Hashing cost is work-normalised: 10 fast blocks == 1 slow block of work.
     assert fast.hashing_cost() == pytest.approx(slow.hashing_cost())
 
 

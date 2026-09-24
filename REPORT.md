@@ -476,21 +476,25 @@ while reaching 50% at depth 10 requires 0.479 — depth, again, is the defense.
 | 600 s × 3 | 175.234 | 175.234 | 17 117.0 |
 | 600 s × 5 | 2 806.088 | 2 806.088 | 1 776.84 |
 | 600 s × 10 | 1 272 302.7 | 1 272 302.7 | −2.14 |
-| 60 s × 1 | 50.00 | 500.00 | 199 990.0 |
-| 60 s × 2 | 357.143 | 3 571.429 | 55 980.0 |
-| 60 s × 3 | 1 752.336 | 17 523.36 | 17 090.0 |
-| 60 s × 5 | 28 060.881 | 280 608.8 | 1 731.84 |
-| 60 s × 10 | 12 723 027.3 | 127 230 272.7 | −92.14 |
+| 60 s × 1 | 0.500 | 5.00 | 199 999.9 |
+| 60 s × 2 | 3.571 | 35.714 | 55 999.8 |
+| 60 s × 3 | 17.523 | 175.234 | 17 119.7 |
+| 60 s × 5 | 280.609 | 2 806.088 | 1 781.34 |
+| 60 s × 10 | 127 230.3 | 1 272 302.7 | 6.86 |
 
-At a fixed confirmation count the absolute break-even attack value for 60 s
-blocks is exactly **10×** the 600 s value (`5.00 → 50.00`), and the reward
-multiple `V/C` is **100×** (`5.00 → 500.00`); both follow from the R7
-work-normalization, in which a fast block's reference coinbase is `1/10` and
-its work-normalized cost is `10×`. Expected attacker value at fixed count is
-essentially unchanged (`199 999` vs `199 990`; `55 998` vs `55 980`), so faster
-blocks do **not** improve attack profitability at equal confirmation count. The
-interval-invariant dimensionless target — the Fablous `X/C = (m−1)/P` — is
-reproduced exactly in §"36× Coinbase Reproduction" (`35.714` at `m = 2`).
+At a fixed confirmation count the reward multiple `V/C` is **invariant** to the
+block interval (`5.00`, `35.714`, `175.234`, `2 806.088`, `1 272 302.7` for both
+600 s and 60 s), while the absolute break-even attack value for 60 s blocks is
+exactly **0.1×** the 600 s value (`5.00 → 0.50`). This follows from the R7
+work-normalization: a fast block's reference coinbase and its work-normalized
+cost per block are *both* `1/10` of the 600 s values, so `V/C` is unchanged.
+Expected attacker value at fixed count is essentially unchanged at low counts
+(`199 999` vs `199 999.9`; `55 998` vs `55 999.8`); the only difference is the
+work-normalized hash-cost term, which is small except at the deepest count
+(600 s × 10: `−2.14` vs 60 s × 10: `+6.86`). Faster blocks do **not** improve
+attack profitability at equal confirmation count. The interval-invariant
+dimensionless target — the Fablous `X/C = (m−1)/P` — is reproduced exactly in
+§"36× Coinbase Reproduction" (`35.714` at `m = 2`).
 
 `R8_cost_accounting` confirms the proponent's cost claim (C4) at the level of
 normalized work:
@@ -612,13 +616,14 @@ this model.
 
 4. **Economic viability is count-driven, not interval-driven.** At a fixed
    confirmation count, expected attacker value is essentially unchanged
-   between 60 s and 600 s blocks (`199 999` vs `199 990` at 1 conf; `55 998`
-   vs `55 980` at 2 conf), and the attack turns unprofitable at 10
-   confirmations in both (`−2.14` vs `−92.14`). The interval-invariant
-   dimensionless target `X/C = (m−1)/P` is `5.00`, `35.714`, `175.234` at
-   1–3 confirmations (C3). Faster blocks do not make an attack cheaper at
-   equal count; they only change the coinbase units in which break-even is
-   expressed.
+   between 60 s and 600 s blocks (`199 999` vs `199 999.9` at 1 conf;
+   `55 998` vs `55 999.8` at 2 conf), and the attack is marginal at 10
+   confirmations in both (600 s `−2.14`; 60 s `+6.86` — the difference is only
+   the work-normalized hash-cost term). The interval-invariant dimensionless
+   target `X/C = (m−1)/P` is `5.00`, `35.714`, `175.234` at 1–3 confirmations
+   (C3), and the reward multiple `V/C` is likewise invariant. Faster blocks do
+   not make an attack cheaper at equal count; they only change the coinbase
+   units in which break-even is expressed.
 
 5. **The claims that remain unsupported require data this model does not
    contain.** C5 (external SHA-256 acquisition) is analyzed only as a
