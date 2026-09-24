@@ -17,7 +17,17 @@ from typing import Any, Mapping
 
 import matplotlib
 
-matplotlib.use("Agg")  # headless, deterministic
+
+def _in_ipython() -> bool:
+    try:
+        from IPython import get_ipython
+    except ImportError:  # pragma: no cover - IPython is a notebook-only extra
+        return False
+    return get_ipython() is not None
+
+
+if not _in_ipython():
+    matplotlib.use("Agg")  # headless, deterministic
 
 import matplotlib.pyplot as plt
 import numpy as np
