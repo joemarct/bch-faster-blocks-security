@@ -551,6 +551,55 @@ this model.
 
 ---
 
+## Conclusions
+
+1. **The proponent's central mathematical claims replicate.** Interval
+   invariance of one-confirmation minority security (C1) is exact, not an
+   approximation: `1×60 s` and `1×600 s` both yield `P = 0.201165` at
+   `q = 0.10`. The 2×60 s advantage (C2) and the ~36× coinbase target (C3)
+   reproduce to machine precision (`0.056070` vs `0.201165`, a **≈3.6×**
+   reduction; `X/C = 35.714`). The Stone fork-matching thresholds (C6/C7)
+   reproduce within their bisection brackets (`0.5105 → 0.5716` at even odds,
+   `0.3322 → 0.4498` at 10%).
+
+2. **Confirmation count is the dominant security variable.** In the race
+   model, security is governed by depth `z`, not by chainwork and not by
+   wall-clock time in isolation. Equal work with finer granularity is strictly
+   safer (`1×600 s` `0.201175` vs `10×60 s` `0.000005`), and time-to-security
+   compresses ~10–30× because confirmations accrue ten times faster. Catch-up
+   difficulty at depth — not the probability of being behind — drives the
+   reversal, which is why the decomposition (P3) shows deep deficits being
+   common yet harmless.
+
+3. **The security gain is real but conditional.** It requires the merchant to
+   actually wait for the extra fast confirmation(s). It is erased by a single
+   pre-mined attacker block (`P` rises to `0.279`, and to `1.0` at two) and
+   substantially weakened if the attacker can acquire external hashpower above
+   the honest baseline for a sustained window (R4/R5). Reactive timing and
+   moderate abandonment policies move the result only slightly (R2/R3).
+
+4. **Economic viability tracks the same count law.** Break-even `V/C` at fixed
+   confirmation count is interval-invariant in normalized terms, and faster
+   blocks scale the forfeited-coinbase term linearly (10× smaller per
+   confirmation), so the 60 s break-even values are exactly 10× the 600 s
+   values. The attack cost per unit normalized work is constant (`600`),
+   consistent with C4.
+
+5. **Overall.** Under the stated race and cost assumptions, the proponent's
+   security argument is internally consistent and quantitatively supported:
+   deliberately chosen *fast* confirmation counts dominate equal-work or
+   equal-time *slow* policies, and the headline economic targets are exact.
+   The claims that remain unsupported here are the operational ones (C5) and
+   anything requiring a network layer (propagation, orphan rate, selfish
+   mining with `γ > 0`, partitions), which this model deliberately excludes.
+
+6. **Scope of inference.** These conclusions describe the modeled race and
+   economics only. They are **not** a recommendation for or against
+   CHIP-2025-03 activation, which also turns on engineering, operational, and
+   ecosystem considerations outside the model.
+
+---
+
 ## Reproducibility Appendix
 
 **Environment**
