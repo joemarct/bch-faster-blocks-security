@@ -111,6 +111,8 @@ Tie-policy conventions matter: at `q = 0.10`, `z = 1`, exact `P` is `0.20`
 `0.01712` vs `0.003031`; `z = 5` `0.001782` vs `0.000329`; `z = 10`
 `7.86e-06` vs `1.5e-06`.
 
+![Figure 2 — reversal probability vs confirmation depth](results/figures/fig02_reversal_vs_depth.png)
+
 ---
 
 ## Simulator Validation
@@ -140,6 +142,8 @@ All entries agree within Monte Carlo and Wilson-interval error at
 `trials = 200 000`; at zero observed successes the report carries the Wilson
 **upper bound** rather than an exact zero (`§31`). The event-driven and
 vectorized simulators agree with each other and with the derivations.
+
+![Figure 1 — analytical vs Monte Carlo](results/figures/fig01_analytical_vs_mc.png)
 
 Fork-matching thresholds were independently re-verified by directly running
 `stone_dp.fin_park_fork_two_sided` (q at target probability):
@@ -173,6 +177,8 @@ expected wait of only 120 s (one-fifth of the 600 s policy) and one-fifth the
 expected work. `60 s × 1` is *exactly* `600 s × 1` (C1). The claim (C2) that
 "two fast confirmations can beat one slow one" holds in this model.
 
+![Figure 3 — focused policy comparison](results/figures/fig03_focused_policies.png)
+
 ---
 
 ## Why the Result Occurs
@@ -202,6 +208,10 @@ not by the probability of the deficit itself. Deep deficits are common (at
 from depth 10 costs `2.9e-10`. Faster blocks let the merchant cheaply buy
 *more depth*; depth is what the catch-up term punishes exponentially.
 
+![Figure 4 — deficit distribution](results/figures/fig04_deficit_distribution.png)
+
+![Figure 5 — reversal decomposition](results/figures/fig05_decomposition.png)
+
 ---
 
 ## Confirmation Count vs Chainwork
@@ -219,6 +229,8 @@ count (`q = 0.10`):
 (delivering the same work as one slow confirmation) are drastically safer.
 This is consistent with C1: the race probability is a function of confirmation
 *count*, and chainwork only enters through count.
+
+![Figure 6 — equal expected chainwork](results/figures/fig06_equal_chainwork.png)
 
 ---
 
@@ -243,6 +255,8 @@ the same attacker success. A 60 s chain reaches its eventual 1-conf value
 (`≈ 0.20`) in about 10 minutes; the 600 s chain needs over an hour. Note the
 fast chain's *eventual* value is the same 0.20 — speed does not lower the
 asymptote, it shortens the approach to it.
+
+![Figure 7 — reversal vs elapsed time](results/figures/fig07_reversal_vs_time.png)
 
 ---
 
@@ -276,6 +290,8 @@ latency (conf × interval) against attacker success. A merchant wanting
 `P < 0.01` at `q = 0.10` reaches it in `3 × 60 s = 180 s` (P = 0.017) and
 `5 × 60 s = 300 s` (P = 0.0016); the 600 s chain needs the same *count*, i.e.
 30–50 minutes. The frontier is a function of count and `q`, not of `T` alone.
+
+![Figure 8 — security/latency frontier](results/figures/fig08_frontier.png)
 
 ---
 
@@ -329,6 +345,8 @@ Reversal probability by deadline (eventual in parentheses):
 `2×60 s` reaches its eventual value within ≈ 600 s; `1×600 s` needs ≳ 1 hour.
 Finite deadlines mostly *reduce* the fast-block advantage in absolute terms
 but never reverse the ordering.
+
+![Figure 9 — finite attack duration](results/figures/fig09_finite_duration.png)
 
 ### Start timing (`R2_start_time`, 60 s × 2, `q = 0.10`)
 
@@ -404,6 +422,8 @@ Below ~0.10 active share the extra hash adds nothing; at 0.20 it needs
 raises success to 0.066 and long windows approach certainty. This bounds how
 "fleeting" external hash can be before it matters.
 
+![Figure 11 — temporary majority duration](results/figures/fig11_temporary_majority_heatmap.png)
+
 ### Acquisition delay (`R5_acquisition_delay`, 600 s, `z = 2`, `q0 = 0.10`)
 
 Reversal probability versus delay before acquired hash becomes active; the
@@ -422,6 +442,8 @@ total attacker shares while active `0.1 / 0.2 / 0.33 / 0.4 / 0.5`:
 **Insight.** A one-minute acquisition delay barely helps; delays of 30–60
 minutes cut an established minority-plus-rented-hash attack substantially.
 The marginal value of delay saturates once the honest chain has extended.
+
+![Figure 10 — external-hash acquisition delay](results/figures/fig10_acquisition_delay_heatmap.png)
 
 ### Required external hash ratio (`R6_external_threshold`)
 
@@ -484,6 +506,8 @@ Cost per unit of normalized work is **600 across every policy** — the
 majority-attack cost is invariant to block interval when measured per unit
 chainwork (C4 supported). Faster blocks deliver the *same* work more
 cheaply in wall-clock time, not cheaper in aggregate hash.
+
+![Figure 12 — break-even transaction value](results/figures/fig12_break_even_vs_policy.png)
 
 ---
 
