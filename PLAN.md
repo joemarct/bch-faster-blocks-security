@@ -1469,11 +1469,11 @@ Finite attack duration curves.
 
 ## Figure 10
 
-External-hash acquisition-delay heatmap.
+Temporary-majority duration heatmap.
 
 ## Figure 11
 
-Temporary-majority duration heatmap.
+External-hash acquisition-delay heatmap.
 
 ## Figure 12
 

@@ -195,7 +195,7 @@ plt.show()
     },
     "09_external_hash": {
         "title": "# 09 — Temporary external hashpower (sections 22-24)\n"
-        "Acquisition delay and temporary-majority duration.",
+        "Temporary-majority duration and acquisition delay.",
         "body": """
 ```python
 r4 = EX.r4_temporary_majority(cfg, trials=2000)
@@ -203,9 +203,9 @@ r5 = EX.r5_acquisition_delay(cfg, trials=2000)
 r6 = EX.r6_external_threshold(cfg)
 print("R6 external hash ratio:", r6.data["tables"])
 
-fig = PL.fig10_acquisition_delay_heatmap(cfg, results={"R5": r5})
+fig = PL.fig10_temporary_majority_heatmap(cfg, results={"R4": r4})
 plt.show()
-fig = PL.fig11_temporary_majority_heatmap(cfg, results={"R4": r4})
+fig = PL.fig11_acquisition_delay_heatmap(cfg, results={"R5": r5})
 plt.show()
 ```
 """,

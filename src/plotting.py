@@ -279,30 +279,9 @@ def fig9_finite_duration(cfg, results=None, trials: int | None = None):
 
 
 # --------------------------------------------------------------------------
-# Figure 10: acquisition-delay heatmap
+# Figure 10: temporary-majority duration heatmap
 # --------------------------------------------------------------------------
-def fig10_acquisition_delay_heatmap(cfg, results=None, trials: int | None = None):
-    res = _get(results, "R5", "R5_acquisition_delay") or EX.r5_acquisition_delay(
-        cfg, trials
-    )
-    heat = res.data["heat"]
-    fig, ax = plt.subplots(figsize=(7, 5))
-    im = ax.imshow(heat, aspect="auto", origin="lower", cmap="viridis")
-    ax.set_xticks(range(len(res.data["shares"])))
-    ax.set_xticklabels([f"{s:.2f}" for s in res.data["shares"]])
-    ax.set_yticks(range(len(res.data["delays"])))
-    ax.set_yticklabels([f"{int(d)}" for d in res.data["delays"]])
-    ax.set_xlabel("active attacker share")
-    ax.set_ylabel("acquisition delay (s)")
-    ax.set_title("Figure 10 — external-hash acquisition delay")
-    fig.colorbar(im, ax=ax, label="reversal probability")
-    return fig
-
-
-# --------------------------------------------------------------------------
-# Figure 11: temporary-majority duration heatmap
-# --------------------------------------------------------------------------
-def fig11_temporary_majority_heatmap(cfg, results=None, trials: int | None = None):
+def fig10_temporary_majority_heatmap(cfg, results=None, trials: int | None = None):
     res = _get(results, "R4", "R4_temporary_majority") or EX.r4_temporary_majority(
         cfg, trials
     )
@@ -315,7 +294,28 @@ def fig11_temporary_majority_heatmap(cfg, results=None, trials: int | None = Non
     ax.set_yticklabels([f"{s:.2f}" for s in res.data["shares"]])
     ax.set_xlabel("active duration (s)")
     ax.set_ylabel("active attacker share")
-    ax.set_title("Figure 11 — temporary majority duration")
+    ax.set_title("Figure 10 — temporary majority duration")
+    fig.colorbar(im, ax=ax, label="reversal probability")
+    return fig
+
+
+# --------------------------------------------------------------------------
+# Figure 11: acquisition-delay heatmap
+# --------------------------------------------------------------------------
+def fig11_acquisition_delay_heatmap(cfg, results=None, trials: int | None = None):
+    res = _get(results, "R5", "R5_acquisition_delay") or EX.r5_acquisition_delay(
+        cfg, trials
+    )
+    heat = res.data["heat"]
+    fig, ax = plt.subplots(figsize=(7, 5))
+    im = ax.imshow(heat, aspect="auto", origin="lower", cmap="viridis")
+    ax.set_xticks(range(len(res.data["shares"])))
+    ax.set_xticklabels([f"{s:.2f}" for s in res.data["shares"]])
+    ax.set_yticks(range(len(res.data["delays"])))
+    ax.set_yticklabels([f"{int(d)}" for d in res.data["delays"]])
+    ax.set_xlabel("active attacker share")
+    ax.set_ylabel("acquisition delay (s)")
+    ax.set_title("Figure 11 — external-hash acquisition delay")
     fig.colorbar(im, ax=ax, label="reversal probability")
     return fig
 
@@ -354,8 +354,8 @@ FIGURES = {
     "fig07_reversal_vs_time": fig7_reversal_vs_time,
     "fig08_frontier": fig8_frontier,
     "fig09_finite_duration": fig9_finite_duration,
-    "fig10_acquisition_delay_heatmap": fig10_acquisition_delay_heatmap,
-    "fig11_temporary_majority_heatmap": fig11_temporary_majority_heatmap,
+    "fig10_temporary_majority_heatmap": fig10_temporary_majority_heatmap,
+    "fig11_acquisition_delay_heatmap": fig11_acquisition_delay_heatmap,
     "fig12_break_even_vs_policy": fig12_break_even_vs_policy,
 }
 

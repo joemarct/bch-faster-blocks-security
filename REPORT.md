@@ -307,6 +307,8 @@ All entries agree within Monte Carlo and Wilson-interval error at `trials = 200 
 
 The exact closed form contains no `T` term, so this equality is a theorem of the model, not a numerical coincidence. C1 is **supported and exact**.
 
+![Figure 2 — reversal probability vs confirmation depth](results/figures/fig02_reversal_vs_depth.png)
+
 ### 4.3 Core policy comparison (C2, P2)
 
 `P2_policy_comparison`, exact/vectorized, comparing the configured confirmation policies:
@@ -323,8 +325,6 @@ The exact closed form contains no `T` term, so this equality is a theorem of the
 **Result.** `2×60 s` has reversal probability `0.056070` versus `0.201165` for `1×600 s` — a **≈ 3.6× reduction** in attacker success, achieved with an expected wait of only 120 s (one-fifth of the 600 s policy) and one-fifth the expected work. `60 s × 1` is *exactly* `600 s × 1` (C1). The claim (C2) that two fast confirmations can beat one slow one **holds in this model**, and this report supplies the magnitude the proposal does not.
 
 ![Figure 3 — focused policy comparison](results/figures/fig03_focused_policies.png)
-
-![Figure 2 — reversal probability vs confirmation depth](results/figures/fig02_reversal_vs_depth.png)
 
 ### 4.4 Why the result occurs: the deficit decomposition (P3)
 
@@ -531,7 +531,7 @@ Early abandonment lowers measured reversal probability, most at deficit 1 (0.043
 
 **Insight.** Temporary hashrate only helps the attacker once the active share is materially above the honest minority baseline and the window is long. Below ~0.10 active share the extra hash adds nothing; at 0.20 it needs ≥ 300 s to move the needle; at majority (>0.5) even a one-minute window raises success to 0.066 and long windows approach certainty. This bounds how "fleeting" external hash can be before it matters.
 
-![Figure 11 — temporary majority duration](results/figures/fig11_temporary_majority_heatmap.png)
+![Figure 10 — temporary majority duration](results/figures/fig10_temporary_majority_heatmap.png)
 
 #### 4.10.5 Acquisition delay (R5)
 
@@ -548,7 +548,7 @@ Early abandonment lowers measured reversal probability, most at deficit 1 (0.043
 
 **Insight.** A one-minute acquisition delay barely helps; delays of 30–60 minutes cut an established minority-plus-rented-hash attack substantially. The marginal value of delay saturates once the honest chain has extended.
 
-![Figure 10 — external-hash acquisition delay](results/figures/fig10_acquisition_delay_heatmap.png)
+![Figure 11 — external-hash acquisition delay](results/figures/fig11_acquisition_delay_heatmap.png)
 
 #### 4.10.6 Required external hash ratio (R6)
 
@@ -865,6 +865,6 @@ Narrative notebooks: `notebooks/01_analytical_baseline.ipynb` … `10_economics.
 | 7 | `fig07_reversal_vs_time.png` | Reversal vs elapsed time |
 | 8 | `fig08_frontier.png` | Security/latency frontier |
 | 9 | `fig09_finite_duration.png` | Finite attack duration |
-| 10 | `fig10_acquisition_delay_heatmap.png` | External-hash acquisition delay |
-| 11 | `fig11_temporary_majority_heatmap.png` | Temporary-majority duration |
+| 10 | `fig10_temporary_majority_heatmap.png` | Temporary-majority duration |
+| 11 | `fig11_acquisition_delay_heatmap.png` | External-hash acquisition delay |
 | 12 | `fig12_break_even_vs_policy.png` | Break-even transaction value |
