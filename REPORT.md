@@ -1,6 +1,6 @@
-# Confirmation Security Under a 600 s → 60 s Block-Interval Change on Bitcoin Cash
+# Probing and Stress-Testing Faster-Block Confirmation Security on Bitcoin Cash
 
-### An independent reproduction and robustness study of the quantitative security claims in CHIP-2025-03 (*Fablous*)
+### An independent investigation and robustness study of the quantitative security claims in CHIP-2025-03 (*Fablous*)
 
 ---
 
